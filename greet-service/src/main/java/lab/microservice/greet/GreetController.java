@@ -22,7 +22,8 @@ public class GreetController {
         UserDTO userDTO = userServiceProxy.getUser(id);
 
         // return hello with username
-        return new ResponseEntity<String>("Hello " + userDTO.getUsername(), HttpStatus.OK);
+        return new ResponseEntity<String>("Hello " + userDTO.getUsername() + " at port:" + userDTO.getPort(),
+                HttpStatus.OK);
 
     }
 

@@ -4,6 +4,8 @@ public class UserDTO {
     private String username;
     private String email;
 
+    private int port;
+
     public String getUsername() {
         return username;
     }
@@ -18,6 +20,14 @@ public class UserDTO {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
     }
 
 }
